@@ -4,10 +4,12 @@
 
 :root {
     --dark_blue: rgb(9, 9, 100);
+    --skyblue: lightskyblue;
+    --aliceblue: aliceblue;
 }
 
 body {
-    background-color: aliceblue;
+    background-color: var(--aliceblue);
     font-family: Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -61,14 +63,14 @@ nav a:hover {
     position: absolute;
     bottom:70px;
     right: 50px;
-    color:white;
+    color:var(--aliceblue);;
     font-size: 60px;
 }
 
 .detail_container {
     display: flex;
     justify-content: space-evenly;
-    background-color: aliceblue;
+    background-color: var(--aliceblue);;
     margin-bottom: 15px;
     
 }
@@ -92,18 +94,18 @@ nav a:hover {
 .work_flex_container {
     position: re;
     display: flex;
-    background-color: aliceblue;
+    background-color: var(--aliceblue);;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
 
     }
 
 .bigbox {
     position:relative;
-    background-color: aliceblue;
+    background-color: var(--skyblue);
     flex-basis: 100%;
     height: 236px;
-    border: solid darkgreen;;
+    border: solid var(--skyblue);
     transition: all 0.5s ease-in-out;
 }
 
@@ -113,50 +115,36 @@ nav a:hover {
 
 }
 
-.bigbox:hover, 
-.bigbox:hover .bigbox{
-    box-shadow: inset 0px 0px 500px orange, 0 0 1px red;
-}
 
 .smallbox {
     position: relative;
-    background-color: lightblue;
-    width: 50%;
+    background-color: var(--skyblue);
+    width: 49%;
     height: auto;  
     border: 1px solid;
+    margin-top: 12px;
     align-items: center;
-    border: solid darkgreen;
+    border: solid var(--skyblue);
     
 }
 
-.smallbox:hover, 
-.smallbox:hover .smallbox {
-    box-shadow: inset 0px 0px 500px orange, 0 0 1px red;
-}
-
-#goog img {
+.smallbox img {
  display: block;
  width: 100%;
  height: 100%;
  
 }
 
-#git img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    
-   }
-
-#horiseon img {
+.bigbox img {
     display: block;
     width: 100%;
     height:100%;
 }
 
+
 figure {
     position: relative;
-    border: 1px solid darkgreen;
+    border: 1px solid var(--skyblue);
     padding: 4px;
     margin: auto;
     z-index:0;
@@ -166,8 +154,8 @@ figure {
 
 figcaption {
     position: absolute;
-    color:aquamarine;
-    background-color: black;
+    color:var(--dark_blue);
+    background-color: var(--skyblue);
     text-align: center;
     width: 15%;
     margin-top: -6em;
@@ -182,23 +170,24 @@ figcaption {
    border-bottom-color: rgb(230, 230, 42);  
 }
 
-.contact_details ul li a {
-    
+.contact_details ul li a { 
     color: var(--dark_blue);
  }
+ 
+ .contact_details ul li a:hover {
+    box-shadow: inset 0px 0px 50px rgb(230, 230, 42), 0 0 1px orange;
+}
+
 
 .smallbox:hover, 
-.smallbox:hover #goog img #git img {
+.smallbox:hover {
     opacity: 0.3;
-    background-color: lightgreen;
-    box-shadow: inset 0px 0px 500px orange;
 }
 
 .bigbox:hover, 
-.bigbox:hover #horiseon img {
+.bigbox:hover {
     opacity: 0.3;
-    background-color: lightgreen;
-    box-shadow: inset 0px 0px 500px orange;
+    
 }
 
 @media screen and (max-width: 700px) {
@@ -234,6 +223,10 @@ figcaption {
         display: block;
         align-items: center;
         
+    }
+
+    .contact_details ul li {
+        display: block;
     }
 
     
