@@ -4,7 +4,7 @@
 
 My motivation behind creating this simple portfolio page was to showcase my skill set to employers.
 It consolidates my work (small github projects) and contact details in a single web page.
-While developing this page, I came across many simple animations which CSS provides to make it more user friendly. I tried to use them here.
+While developing this page, I came across many simple animations which CSS provides to make it more user friendly. I tried to use them here. (example: pseudo class, media screen and flex-box etc)
 
 ## Installation
 Browser to open the link:
