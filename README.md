@@ -7,7 +7,7 @@ It consolidates my work (small github projects) and contact details in a single 
 While developing this page, I came across many simple animations which CSS provides to make it more user friendly. I tried to use them here. (example: pseudo class, media screen and flex etc)
 
 ## Installation
-Browser to open the link:
+Browser to open the link: https://nehaps29.github.io/neha_s_profile/
 Click on the navigation link, it will take you to the respective section
 ![Getting Started](./assets/images/nav_link.JPG)
 Hover over the work section images and click it to get details about it
